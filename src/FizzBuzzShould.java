@@ -1,38 +1,15 @@
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzShould {
     private FizzBuzz fizzBuzz = new FizzBuzz();
 
-    @Test
-    public void Convert1(){
-        assertConvert(1, "1");
-    }
-
-    @Test
-    public void Convert2(){
-        assertConvert(2, "2");
-    }
-
-    @Test
-    public void Convert3(){
-        assertConvert(3, "Fizz");
-    }
-
-    @Test
-    public void Convert5(){
-        assertConvert(5,"Buzz");
-    }
-
-    @Test
-    public void Convert6(){
-        assertConvert(6,"Fizz");
-    }
-
-    @Test
-    public void Convert10(){
-        assertConvert(10,"Buzz");
+    @ParameterizedTest
+    @CsvSource({ "1, 1", "2, 2", "3, Fizz", "5, Buzz", "6, Fizz", "10, Buzz", "15, FizzBuzz" })
+    void convert(int number, String expected) {
+        assertConvert(number, expected);
     }
 
     private void assertConvert(int number, String expected) {

@@ -1,9 +1,15 @@
 public class FizzBuzz {
     public String convert(int number){
-        if (number % 3 == 0)
-            return "Fizz";
-        if(number % 5 == 0)
-            return "Buzz";
-        return String.valueOf(number);
+        String result = "";
+        if (isDivisibleBy(3, number))
+            result += "Fizz";
+        if(isDivisibleBy(5, number))
+            result += "Buzz";
+        if(result.equals("")) return String.valueOf(number);
+        return result;
+    }
+
+    private boolean isDivisibleBy(int divisor, int number) {
+        return number % divisor == 0;
     }
 }
