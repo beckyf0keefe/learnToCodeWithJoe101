@@ -1,5 +1,5 @@
 public class FizzBuzz {
-    public int convert(){
-        return 1;
+    public int convert(int number){
+        return number;
     }
 }
