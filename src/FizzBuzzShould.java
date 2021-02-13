@@ -25,7 +25,11 @@ public class FizzBuzzShould {
         assertConvert(5,"Buzz");
     }
 
-    
+    @Test
+    public void Convert6(){
+        assertConvert(6,"Fizz");
+    }
+
 
     private void assertConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
