@@ -7,20 +7,20 @@ public class FizzBuzzShould {
 
     @Test
     public void Convert1(){
-        assertConvert(1);
+        assertConvert(1, "1");
     }
 
     @Test
     public void Convert2(){
-        assertConvert(2);
+        assertConvert(2, "2");
     }
 
     @Test
     public void Convert3(){
-        assertEquals("Fizz", fizzBuzz.convert(3));
+        assertConvert(3, "Fizz");
     }
 
-    private void assertConvert(int number) {
-        assertEquals(String.valueOf(number), fizzBuzz.convert(number));
+    private void assertConvert(int number, String expected) {
+        assertEquals(expected, fizzBuzz.convert(number));
     }
 }
