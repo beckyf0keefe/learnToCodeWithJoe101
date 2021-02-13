@@ -30,6 +30,10 @@ public class FizzBuzzShould {
         assertConvert(6,"Fizz");
     }
 
+    @Test
+    public void Convert10(){
+        assertConvert(10,"Buzz");
+    }
 
     private void assertConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
