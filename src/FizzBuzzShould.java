@@ -20,6 +20,13 @@ public class FizzBuzzShould {
         assertConvert(3, "Fizz");
     }
 
+    @Test
+    public void Convert5(){
+        assertConvert(5,"Buzz");
+    }
+
+    
+
     private void assertConvert(int number, String expected) {
         assertEquals(expected, fizzBuzz.convert(number));
     }
