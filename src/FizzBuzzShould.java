@@ -15,7 +15,12 @@ public class FizzBuzzShould {
         assertConvert(2);
     }
 
-    private void assertConvert(int i) {
-        assertEquals(i, fizzBuzz.convert(i));
+    @Test
+    public void Convert3(){
+        assertEquals("Fizz", fizzBuzz.convert(3));
+    }
+
+    private void assertConvert(int number) {
+        assertEquals(String.valueOf(number), fizzBuzz.convert(number));
     }
 }
