@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Acceptance {
     @Test
-    @Ignore
     void acceptanceTest(){
         String result = "1\n" +
                 "2\n" +
@@ -27,6 +26,6 @@ public class Acceptance {
                 "Fizz\n" +
                 "19\n" +
                 "Buzz";
-        assertEquals(result, FizzBuzz.print(2));
+        assertEquals(result, FizzBuzz.print(20));
     }
 }
