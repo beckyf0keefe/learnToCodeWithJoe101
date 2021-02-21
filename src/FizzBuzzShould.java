@@ -22,6 +22,11 @@ public class FizzBuzzShould {
 
     @Test
     void printUpTo2() {
-        assertEquals("1\n2\n", FizzBuzz.print(2));
+        assertEquals("1\n2", FizzBuzz.print(2));
+    }
+
+    @Test
+    void printUpTo3() {
+        assertEquals("1\n2\nFizz", FizzBuzz.print(3));
     }
 }
