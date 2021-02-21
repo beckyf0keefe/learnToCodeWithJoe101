@@ -17,6 +17,11 @@ public class FizzBuzzShould {
 
     @Test
     void print1() {
-        assertEquals("1", FizzBuzz.print());
+        assertEquals("1", FizzBuzz.print(1));
+    }
+
+    @Test
+    void printUpTo2() {
+        assertEquals("1\n2\n", FizzBuzz.print(2));
     }
 }

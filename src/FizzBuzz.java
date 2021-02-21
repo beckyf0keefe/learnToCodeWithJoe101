@@ -15,7 +15,11 @@ public class FizzBuzz {
         return number % divisor == 0;
     }
 
-    public static String print() {
-        return "1";
+    public static String print(int upTo) {
+        String result = "";
+        for (int i=1; i<=upTo; i++) {
+            result += i+"\n";
+        }
+        return result;
     }
 }

@@ -27,6 +27,6 @@ public class Acceptance {
                 "Fizz\n" +
                 "19\n" +
                 "Buzz";
-        assertEquals(result, FizzBuzz.print());
+        assertEquals(result, FizzBuzz.print(2));
     }
 }
