@@ -16,10 +16,9 @@ public class FizzBuzz {
     }
 
     public static String print(int upTo) {
-        String result = "";
-        for (int i=1; i<=upTo; i++) {
-            result += i+"\n";
-        }
-        return result;
+        StringBuilder result = new StringBuilder();
+        for (int i = 1; i <= upTo; i++)
+            result.append(i).append("\n");
+        return result.toString();
     }
 }
