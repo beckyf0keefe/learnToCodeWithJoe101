@@ -1,5 +1,7 @@
 public class FizzBuzz {
-    public String convert(int number){
+    public String blah = "hello";
+
+    public static String convert(int number){
         String result = "";
         if (isDivisibleBy(3, number))
             result += "Fizz";
@@ -9,7 +11,11 @@ public class FizzBuzz {
         return result;
     }
 
-    private boolean isDivisibleBy(int divisor, int number) {
+    private static boolean isDivisibleBy(int divisor, int number) {
         return number % divisor == 0;
+    }
+
+    public static String print() {
+        return "1";
     }
 }
