@@ -28,5 +28,9 @@ public class FooBarShould {
     void convert6() {
         assertEquals("Foo", FooBar.convert(6));
     }
+    @Test
+    void convert7() {
+        assertEquals("QixQix", FooBar.convert(7));
+    }
 
 }

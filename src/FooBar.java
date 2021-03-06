@@ -9,6 +9,10 @@ public class FooBar {
             result += "Bar";
         if(String.valueOf(number).contains("5"))
             result += "Bar";
+        if(number==7)
+            result += "Qix";
+        if(String.valueOf(number).contains("7"))
+            result += "Qix";
         if(result.equals(""))
             result = String.valueOf(number);
         return result;
