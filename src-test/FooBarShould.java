@@ -19,4 +19,14 @@ public class FooBarShould {
     void convert3(){
         assertEquals("FooFoo", FooBar.convert(3));
     }
+
+    @Test
+    void convert5() {
+        assertEquals("BarBar", FooBar.convert(5));
+    }
+    @Test
+    void convert6() {
+        assertEquals("Foo", FooBar.convert(6));
+    }
+
 }
