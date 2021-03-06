@@ -9,7 +9,7 @@ public class FooBar {
             result += "Bar";
         if(String.valueOf(number).contains("5"))
             result += "Bar";
-        if(number==7)
+        if(number%7==0)
             result += "Qix";
         if(String.valueOf(number).contains("7"))
             result += "Qix";
