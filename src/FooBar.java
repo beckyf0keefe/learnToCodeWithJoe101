@@ -5,7 +5,7 @@ public class FooBar {
             result += "Foo";
         if(String.valueOf(number).contains("3"))
             result += "Foo";
-        if(number==5)
+        if(number%5==0)
             result += "Bar";
         if(String.valueOf(number).contains("5"))
             result += "Bar";
