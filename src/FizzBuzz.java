@@ -7,7 +7,7 @@ public class FizzBuzz {
             result += "Fizz";
         if(isDivisibleBy(5, number))
             result += "Buzz";
-        if(result.equals("")) return String.valueOf(number);
+        if(result.equals(""))                     String.valueOf(number);
         return result;
     }
 
